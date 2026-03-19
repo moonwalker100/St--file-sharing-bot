@@ -219,10 +219,9 @@ async def start_command(client: Client, message: Message):
                         
     else:   
         reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("• ᴄʟɪᴄᴋ ғᴏʀ ᴍᴏʀᴇ •", callback_data='about')],
-                    [InlineKeyboardButton("• sᴇᴛᴛɪɴɢs", callback_data='setting'),
-                     InlineKeyboardButton(' ᴅᴇᴠᴇʟᴏᴘᴇʀ •', url='https://t.me/peldiya')],
-                    [InlineKeyboardButton("• ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ •", url='https://t.me/battousai_network')],
+                    [InlineKeyboardButton("🤖 Aʙᴏᴜᴛ", callback_data='about')],
+                    [InlineKeyboardButton("Sᴇᴛᴛɪɴɢs ⚙️", callback_data='setting'),
+                     InlineKeyboardButton('🎀 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/peldiya')],
                 ])
         await message.reply_photo(
             photo = random.choice(PICS),
